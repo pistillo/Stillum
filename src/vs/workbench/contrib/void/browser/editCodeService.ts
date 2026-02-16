@@ -290,7 +290,7 @@ class EditCodeService extends Disposable implements IEditCodeService {
 	// 				run: () => { this._commandService.executeCommand(VOID_OPEN_SETTINGS_ACTION_ID) }
 	// 			}]
 	// 		},
-	// 		source: details ? `(Hold ${isMacintosh ? 'Option' : 'Alt'} to hover) - ${details}\n\nIf this persists, feel free to [report](https://github.com/voideditor/void/issues/new) it.` : undefined
+	// 		source: details ? `(Hold ${isMacintosh ? 'Option' : 'Alt'} to hover) - ${details}\n\nIf this persists, feel free to [report](https://github.com/stillumeditor/stillum/issues/new) it.` : undefined
 	// 	})
 	// }
 
@@ -743,7 +743,7 @@ class EditCodeService extends Disposable implements IEditCodeService {
 		const elt: IUndoRedoElement = {
 			type: UndoRedoElementType.Resource,
 			resource: uri,
-			label: 'Void Agent',
+			label: 'Stillum Agent',
 			code: 'undoredo.editCode',
 			undo: async () => { opts?.onWillUndo?.(); await this._restoreVoidFileSnapshot(uri, beforeSnapshot) },
 			redo: async () => { if (afterSnapshot) await this._restoreVoidFileSnapshot(uri, afterSnapshot) }
@@ -997,7 +997,7 @@ class EditCodeService extends Disposable implements IEditCodeService {
 			else if (lastDiff.type === 'deletion')
 				endLineInLlmTextSoFar = lastDiff.startLine
 			else
-				throw new Error(`Void: diff.type not recognized on: ${lastDiff}`)
+				throw new Error(`Stillum: diff.type not recognized on: ${lastDiff}`)
 		}
 
 		// at the start, add a newline between the stream and originalCode to make reasoning easier
@@ -1376,7 +1376,7 @@ class EditCodeService extends Disposable implements IEditCodeService {
 			startRange = [startLine_, endLine_]
 		}
 		else {
-			throw new Error(`Void: diff.type not recognized on: ${from}`)
+			throw new Error(`Stillum: diff.type not recognized on: ${from}`)
 		}
 
 		const { model } = this._voidModelService.getModel(uri)
@@ -1968,7 +1968,7 @@ class EditCodeService extends Disposable implements IEditCodeService {
 
 						const blocks = extractSearchReplaceBlocks(fullText)
 						if (blocks.length === 0) {
-							this._notificationService.info(`Void: We ran Fast Apply, but the LLM didn't output any changes.`)
+							this._notificationService.info(`Stillum: We ran Fast Apply, but the LLM didn't output any changes.`)
 						}
 						this._writeURIText(uri, originalFileCode, 'wholeFileRange', { shouldRealignDiffAreas: true })
 
