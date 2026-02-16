@@ -1,14 +1,14 @@
 {
 	"nameShort": "Stillum",
 	"nameLong": "Stillum",
-	"voidVersion": "1.4.9",
-	"voidRelease": "0044",
+	"stillumVersion": "1.4.9",
+	"stillumRelease": "0044",
 	"applicationName": "stillum",
 	"dataFolderName": ".stillum-editor",
 	"win32MutexName": "stillumeditor",
 	"licenseName": "MIT",
-	"licenseUrl": "https://github.com/voideditor/void/blob/main/LICENSE.txt",
-	"serverLicenseUrl": "https://github.com/voideditor/void/blob/main/LICENSE.txt",
+	"licenseUrl": "https://github.com/stillumeditor/stillum/blob/main/LICENSE.txt",
+	"serverLicenseUrl": "https://github.com/stillumeditor/stillum/blob/main/LICENSE.txt",
 	"serverGreeting": [],
 	"serverLicense": [],
 	"serverLicensePrompt": "",
@@ -29,7 +29,7 @@
 	"darwinBundleIdentifier": "com.stillumeditor.code",
 	"linuxIconName": "stillum-editor",
 	"licenseFileName": "LICENSE.txt",
-	"reportIssueUrl": "https://github.com/voideditor/void/issues/new",
+	"reportIssueUrl": "https://github.com/stillumeditor/stillum/issues/new",
 	"nodejsRepository": "https://nodejs.org",
 	"urlProtocol": "stillum",
 	"extensionsGallery": {
@@ -38,9 +38,9 @@
 	},
 	"builtInExtensions": [],
 	"linkProtectionTrustedDomains": [
-		"https://voideditor.com",
-		"https://voideditor.dev",
-		"https://github.com/voideditor/void",
+		"https://stillumeditor.com",
+		"https://stillumeditor.dev",
+		"https://github.com/stillumeditor/stillum",
 		"https://ollama.com"
 	]
 }

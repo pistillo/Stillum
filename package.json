@@ -1,9 +1,9 @@
 {
-  "name": "code-oss-dev",
+  "name": "stillum-ide-dev",
   "version": "1.99.3",
   "distro": "21c8d8ea1e46d97c5639a7cabda6c0e063cc8dd5",
   "author": {
-    "name": "Microsoft Corporation"
+    "name": "Stillum"
   },
   "license": "MIT",
   "main": "./out/main.js",
@@ -69,6 +69,7 @@
     "extensions-ci": "node ./node_modules/gulp/bin/gulp.js extensions-ci",
     "extensions-ci-pr": "node ./node_modules/gulp/bin/gulp.js extensions-ci-pr",
     "perf": "node scripts/code-perf.js",
+    "icons": "node scripts/icons-from-logo.mjs",
     "update-build-ts-version": "npm install typescript@next && tsc -p ./build/tsconfig.build.json"
   },
   "dependencies": {
@@ -214,6 +215,7 @@
     "istanbul-lib-report": "^3.0.0",
     "istanbul-lib-source-maps": "^4.0.1",
     "istanbul-reports": "^3.1.5",
+    "jimp": "^1.6.0",
     "lazy.js": "^0.4.2",
     "merge-options": "^1.0.1",
     "mime": "^1.4.1",
@@ -229,6 +231,7 @@
     "os-browserify": "^0.3.0",
     "p-all": "^1.0.0",
     "path-browserify": "^1.0.1",
+    "png-to-ico": "^3.0.1",
     "postcss": "^8.4.33",
     "postcss-nesting": "^12.0.2",
     "pump": "^1.0.1",
