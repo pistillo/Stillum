@@ -47,6 +47,9 @@ async function main() {
     { path: 'resources/linux/code.png', size: 256 },
     { path: 'scripts/appimage/stillum.png', size: 256 },
     { path: 'scripts/appimage/void.png', size: 256 },
+    // Icone pagina principale / watermark editor (proporzioni corrette)
+    { path: 'src/vs/workbench/browser/parts/editor/media/void_cube_noshadow.png', size: 512 },
+    { path: 'src/vs/workbench/browser/media/void-icon-sm.png', size: 64 },
   ];
 
   console.log('Generazione PNG con proporzioni corrette...');
